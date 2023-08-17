@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_games",
+  "info": {
+    "singularName": "video-game",
+    "pluralName": "video-games",
+    "displayName": "Video Game",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "maxLength": 150,
+      "minLength": 1,
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
